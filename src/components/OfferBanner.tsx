@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGlobe,
   faSackDollar,
-  faUser,
   faUserShield,
 } from "@fortawesome/pro-regular-svg-icons";
 

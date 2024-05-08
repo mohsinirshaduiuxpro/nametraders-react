@@ -1,4 +1,3 @@
-import React from "react";
 import Search from "../components/Search";
 import FeaturesCard from "../components/FeaturesCard";
 import DomainList from "../components/DomainList";

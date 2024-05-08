@@ -1,5 +1,3 @@
-import React from "react";
-
 import TopBanner from "../components/TopBanner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

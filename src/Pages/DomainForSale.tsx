@@ -1,11 +1,7 @@
 import TopBanner from "../components/TopBanner";
 import ContactUsBanner from "../components/ContactUsBanner";
 import AvailableDomain from "../components/AvailableDomain";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faPhone,
-  faEnvelope,
-  faLocationDot,
   faGripDots,
   faGlobe,
   faCars,
@@ -20,7 +16,6 @@ import {
   faLandmark,
   faPotFood,
   faGamepad,
-  faMapLocation,
   faMapLocationDot,
   faRecycle,
   faNotesMedical,

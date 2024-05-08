@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const MainHeader = () => {
   const [activeLink, setActiveLink] = useState("home");

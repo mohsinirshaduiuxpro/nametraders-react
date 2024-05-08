@@ -16,7 +16,7 @@ const AvailableDomain: React.FC<Props> = ({ availableDomains = [] }) => {
   return (
     <>
       {availableDomains.slice(0, 40).map((item, index) => (
-        <tr>
+        <tr key={index}>
           <td>
             <a href="" className="text-decoration-none text-grey-900">
               {item.name}

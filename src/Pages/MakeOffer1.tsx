@@ -5,9 +5,6 @@ import DomainList from "../components/DomainList";
 import OfferBanner from "../components/OfferBanner";
 import Search from "../components/Search";
 import {
-  faPhone,
-  faEnvelope,
-  faLocationDot,
   faGripDots,
   faGlobe,
   faCars,
@@ -22,7 +19,6 @@ import {
   faLandmark,
   faPotFood,
   faGamepad,
-  faMapLocation,
   faMapLocationDot,
   faRecycle,
   faNotesMedical,

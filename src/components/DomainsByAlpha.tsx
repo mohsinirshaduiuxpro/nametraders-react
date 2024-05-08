@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const DomainsByAlpha = () => {
   const letters = Array.from({ length: 26 }, (_, i) =>
