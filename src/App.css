@@ -745,9 +745,19 @@
     outline: 0;
     box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) #ffffff75;
   }
+
+  .pb-180 {
+    padding-bottom: 180px !important;
+  }
+
   
   
   @media (max-width: 1020px ) {
+    .pb-180 {
+      padding-bottom: 44px !important;
+    }
+
+
     .navbar-nav .nav-item a.nav-link ,   .nav-links .nav-link { 
    
   
@@ -785,6 +795,10 @@
     .f-size-72 , .f-size-52 , .f-size-64{
       font-size: 36px !important;
       line-height: 36px;
+    }
+
+    .pb-180 {
+      padding-bottom: 44px !important;
     }
 
     .py-64.contactus {

@@ -1,7 +1,7 @@
 const ContactUsBanner = () => {
   return (
     <>
-      <div className="container-lg" style={{ paddingBottom: "180px" }}>
+      <div className="container-lg pb-180">
         <div className="bg-green-light rounded rounded-3">
           <div className="row ">
             <div className="col-12 col-lg-6 d-lg-block d-none ">
