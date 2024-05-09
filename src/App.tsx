@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import MainHeader from "./components/MainHeader";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Faqs from "./Pages/Faqs";
 import DomainForSale from "./Pages/DomainForSale";
@@ -47,33 +47,24 @@ function App() {
   return (
     <>
       <MainHeader></MainHeader>
-      <BrowserRouter>
-        <main>
-          <Routes>
-            <Route path="/" element={<Home></Home>}></Route>
-            <Route path="/index" element={<Home></Home>}></Route>
-            <Route path="/Faqs" element={<Faqs></Faqs>}></Route>
-            <Route
-              path="/MakeOffer1"
-              element={<MakeOffer1></MakeOffer1>}
-            ></Route>
-            <Route
-              path="/MakeOffer"
-              element={<MakeOffer2></MakeOffer2>}
-            ></Route>
-            <Route
-              path="/MakeOffer2"
-              element={<MakeOffer3></MakeOffer3>}
-            ></Route>
-            <Route
-              path="/DomainForSale"
-              element={<DomainForSale></DomainForSale>}
-            ></Route>
-            <Route path="/ContactUs" element={<ContactUs></ContactUs>}></Route>
-            <Route path="*" element={<Nopage></Nopage>}></Route>
-          </Routes>
-        </main>
-      </BrowserRouter>
+
+      <main>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/index" element={<Home></Home>}></Route>
+          <Route path="/Faqs" element={<Faqs></Faqs>}></Route>
+          <Route path="/MakeOffer1" element={<MakeOffer1></MakeOffer1>}></Route>
+          <Route path="/MakeOffer" element={<MakeOffer2></MakeOffer2>}></Route>
+          <Route path="/MakeOffer2" element={<MakeOffer3></MakeOffer3>}></Route>
+          <Route
+            path="/DomainForSale"
+            element={<DomainForSale></DomainForSale>}
+          ></Route>
+          <Route path="/ContactUs" element={<ContactUs></ContactUs>}></Route>
+          <Route path="*" element={<Nopage></Nopage>}></Route>
+        </Routes>
+      </main>
+
       <MainFooter></MainFooter>
     </>
   );

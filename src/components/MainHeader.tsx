@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const MainHeader = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -23,13 +24,20 @@ const MainHeader = () => {
                 <nav className="navbar navbar-expand-lg m-0 p-0">
                   <div className="container-fluid p-0">
                     <div className="d-flex justify-content-between align-items-center flex-grow-1">
-                      <a className="navbar-brand" href="index">
+                      {/* <a className="navbar-brand" href="index">
                         <img
                           src="images/logo.svg"
                           className="img-fluid w-100"
                           alt="logo"
                         />
-                      </a>
+                      </a> */}
+                      <NavLink className="navbar-brand" to="index">
+                        <img
+                          src="images/logo.svg"
+                          className="img-fluid w-100"
+                          alt="logo"
+                        />
+                      </NavLink>
                       <div>
                         <button
                           className="navbar-toggler border border-0"
@@ -82,15 +90,15 @@ const MainHeader = () => {
                           <ul className="navbar-nav justify-content-end align-items-center flex-grow-1 font-josefin">
                             {navItems.map((item) => (
                               <li key={item.id} className={`nav-item`}>
-                                <a
+                                <NavLink
                                   className={`nav-link ${
                                     activeLink === item.id ? "active" : ""
                                   }`}
-                                  href={item.href}
+                                  to={item.href}
                                   onClick={() => handleNavLinkClick(item.id)}
                                 >
                                   {item.label}
-                                </a>
+                                </NavLink>
                               </li>
                             ))}
                           </ul>
